@@ -35,7 +35,8 @@ class Thinq
 
         $data = $this->thinqMessage->getMessage();
 
-        $authorization = base64_encode($apiKey);
+        $user = $this->config->getApiUser();
+        $authorization = base64_encode( $user . ':' . $apiKey);
         $url = "https://api.thinq.com/account/{$accountId}/product/origination/sms/send";
 
         $ch = curl_init($url);

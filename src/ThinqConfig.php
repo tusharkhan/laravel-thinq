@@ -25,4 +25,9 @@ class ThinqConfig
     {
         return $this->config['disable_api_calls'];
     }
+    
+    public function  getApiUser()
+    {
+        return $this->config['api_user'];
+    }
 }

@@ -27,6 +27,7 @@ Add this to `.env`
 ```
 THINQ_ACCOUNT_ID=Your thinq account id
 THINQ_API_KEY=Your thinq api key
+THINQ_API_USERNAME=Your thinq api username
 
 ```
 
